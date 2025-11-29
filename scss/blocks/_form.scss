@@ -83,9 +83,6 @@
   input {
     outline: none;
     border: none;
-    @media (max-width: 767px) {
-      width: 100%;;
-    }
     &::placeholder {
       font-family: $ff-main;
       color: $color-jaguar;
