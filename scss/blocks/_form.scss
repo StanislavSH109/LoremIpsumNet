@@ -32,7 +32,7 @@
     cursor: pointer;
     outline: none;
     appearance: none;
-    transition: color .2s ease-in, background .2s ease-in; // ИСПРАВЛЕНО: backround -> background
+    transition: color .2s ease-in, background .2s ease-in;
     font-family: $ff-main;
     @media (max-width: 767px) {
       width: 100%;;

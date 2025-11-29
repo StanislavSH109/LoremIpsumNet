@@ -46,26 +46,19 @@
         line-height: 1; 
         transition: background .3s ease-in, color .3s ease-in;
 
-        // Эффект при наведении
         &:hover {
             background-color: #0056b3;
             border-color: #0056b3;
             color: $color-white;
         }
-        
-        // Эффект при активации/фокусе
         &:active {
             transform: translateY(1px);
         }
     }
-
-    // Стилизация SVG иконки
     &__icon {
         width: 18px;
         height: 18px;
     }
-    
-    // Стилизация текста
     &__text {
         white-space: nowrap;
     }
