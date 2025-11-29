@@ -736,7 +736,6 @@ ul {
   .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 .form .form__select, .form__input-email, .form__input-name,
@@ -901,6 +900,11 @@ ul {
   outline: 1px solid #ffffff;
   border: none;
   letter-spacing: 0.02em;
+}
+@media (max-width: 767px) {
+  .form__button {
+    max-width: unset;
+  }
 }
 
 .custom-file {
