@@ -12,9 +12,8 @@
   @media (max-width: 768px) {
     display: block;
   }
-}
 
-.burger__line {
+  &__line {
   width: 30px;
   height: 2px;
   background: white;
@@ -44,6 +43,7 @@
   &::after {
     bottom: -8px;
   }
+}
 }
 
 .burger.active .burger__line {
