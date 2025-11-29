@@ -1,0 +1,42 @@
+@use '../global/_variables' as *;
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #10101DE5;
+  padding: 60px 20px;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+  transition: right 0.3s ease;
+  z-index: 9;
+  @media (max-width: 767px) {
+    right: -200px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li a {
+      color: $color-white;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: $ff-main;
+      transition: color 0.2s;
+      &:hover {
+        color: $color-summer-sky-light;
+      }
+    }
+  }
+
+  &.active {
+    right: 0;
+  }
+}

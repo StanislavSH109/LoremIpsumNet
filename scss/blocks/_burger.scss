@@ -1,0 +1,61 @@
+@use '../global/variables' as *;
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.burger__line {
+  width: 30px;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: 5px 0;
+  position: relative;
+  transform-origin: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $color-white;
+    left: 0;
+    transform-origin: center;
+    transition: all 0.3s ease;
+  }
+
+  &::before {
+    top: -10px;
+  }
+
+  &::after {
+    bottom: -10px;
+  }
+}
+
+.burger.active .burger__line {
+  background: transparent;
+}
+
+.burger.active .burger__line::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger.active .burger__line::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}

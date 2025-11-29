@@ -1,0 +1,47 @@
+@use '../global/variables' as *;
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.1;
+  font-weight: 400;
+  font-family: $ff-main;
+  color: $color-white;
+  width: 183px;
+  outline: 1px solid $color-white;
+  border-radius: 4px;
+  min-height: 43px;
+  background-color: $color-summer-sky;
+  transition: .2s ease-in-out;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #2e76a5;
+  }
+  &:focus {
+    background-color: #2e76a5;
+    outline: none;
+  }
+  &:active {
+    background-color: #2e76a5;
+  }
+  &--secondary {
+    background-color: $color-white;
+    color: #2A2B30;
+    outline: 1px solid #6F6D7B;
+    transition: color .2s ease-in, background .2s ease-in;
+    &:hover {
+      background-color: #f5d6d62d;
+    }
+    &:focus {
+      background-color: #f5d6d62d;
+      outline: 1px solid #6F6D7B;
+    }
+    &:active {
+      background-color: #f5d6d62d;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@use '../global/_variables' as *;
+
+.hero {
+  display: flex;
+  align-items: flex-start; 
+  min-height: 600px; 
+  background-image: url('../../images/hero/hero.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    position: relative;
+    top: 103px;
+    max-width: 780px;
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      font-family: $ff-main;
+      font-size: 3rem;
+      line-height: 1.2;
+      text-transform: uppercase;
+      margin: 0 0 90px;
+      @media (max-width: 767px) {
+        font-size: 1.5rem;
+        margin: 0 0 40px;
+      }
+      &-first {
+        display: block;
+        span {
+          color: $color-summer-sky-light;
+        }
+      }
+      &-second {
+        display: block;
+        span {
+          color: $color-summer-sky-light;
+        }
+      }
+    }
+    &-text {
+      font-family: $ff-main;
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin: 0 0 10px;
+      @media (max-width: 767px) {
+        font-size: 1rem;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 12px;
+      gap: 10px;
+      margin: 0 0 85px;
+    }
+
+    &-item {
+      font-family: $ff-main;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1;
+      @media (max-width: 767px) {
+        font-size: 1rem;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      gap: 30px;
+      margin: 0 0 305px;
+      @media (max-width: 767px) {
+        margin: 0 0 50px;
+      }
+    }
+  }
+}

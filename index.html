@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="preload" href="" as="font" crossorigin="anonymous">
+  <link rel="preload" href="" as="font" crossorigin="anonymous"> -->
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a class="header__logo" href="#">
+          Loremipsum.<span>net</span>
+        </a>
+        <nav class="header__nav" aria-label="Главное меню">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Бизнес</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">О нас</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Цены</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line" aria-hidden="true"></span>
+        </button>
+        <nav class="side-menu" aria-label="Мобильное меню">
+          <ul class="side-menu__list">
+            <li><a href="#">Бизнес</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Оформить заказ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__content-title">
+            <span class="hero__content-title-first">
+              <span>Lorem ipsum</span> dolor sit
+            </span>
+            <span class="hero__content-title-second">
+              ametconsectetur <span>adipiscing</span>
+            </span>
+          </h1>
+          <p class="hero__content-text">At&nbsp;vero eos et&nbsp;accusamus et&nbsp;iusto odio dignissimos ducimus!</p>
+          <ul class="hero__content-list">
+            <li class="hero__content-item">
+              <p class="hero__content-item-text">-&nbsp;Totam rem aperiam eaque ipsa</p>
+            </li>
+            <li class="hero__content-item">
+              <p class="hero__content-item-text">-&nbsp;Sit voluptatem accusantium doloremque laudantium</p>
+            </li>
+            <li class="hero__content-item">
+              <p class="hero__content-item-text">-&nbsp;Sed ut&nbsp;perspiciatis, unde omnis iste natus error</p>
+            </li>
+          </ul>
+          <div class="hero__content-buttons">
+            <a class="hero__content-button btn" href="#" target="_blank">
+              Заказать
+            </a>
+            <a class="hero__content-button btn btn--secondary" href="#" target="_blank">
+              Подробнее
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="container">
+        <div class="order__wrapper">
+          <div class="order__inner">
+            <h2 class="order__title">Оформление  <span>Заказа</span></h2>
+            <p class="order__text">Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!</p>
+          </div>
+          <div class="order__steps" data-steps>
+            
+            <div class="order__steps-wrapper">
+              <div class="order__steps-round round-icon">
+                <svg class="order__steps-icon" width="33" height="33" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-search"></use>
+                </svg>
+              </div>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+           
+            <div class="order__steps-wrapper">
+              <div class="order__steps-round round-icon">
+                <svg class="order__steps-icon" width="33" height="33" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-percent"></use>
+                </svg>
+              </div>
+              <span>Сonsecteturadipiscing elit</span>
+            </div>
+            
+            <div class="order__steps-wrapper">
+              <div class="order__steps-round round-icon">
+                <svg class="order__steps-icon" width="33" height="33" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-file"></use>
+                </svg>
+              </div>
+              <span>Sed do eiusmod tempor</span>
+            </div>
+           
+            <div class="order__steps-wrapper">
+              <div class="order__steps-round round-icon">
+                <svg class="order__steps-icon" width="33" height="33" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-message"></use>
+                </svg>
+              </div>
+              <span>Esse cillum dolore eu fugiat</span>
+            </div>
+         
+            <div class="order__steps-wrapper">
+              <div class="order__steps-round round-icon">
+                <svg class="order__steps-icon" width="33" height="33" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-money"></use>
+                </svg>
+              </div>
+             <span>Excepteur sint occaecat cupidatat non proident</span>
+            </div>
+          </div>
+          
+          <div class="order__forms">
+            <form class="form" action="">
+              <select name="select" id="select" class="form__select">
+                <option class="form__option" value="" disabled selected hidden>Выберите тип системы</option>
+                <option class="form__option" value="Sed ut perspiciatis" >Sed ut perspiciatis</option>
+                <option class="form__option" value="Nemo emin ipsam" >Nemo emin ipsam</option>
+                <option class="form__option" value="Et harum quidem" >Et harum quidem</option>
+                <option class="form__option" value="Temporibus autem" >Temporibus autem</option>
+                <option class="form__option" value="Itaque earum rerum" >Itaque earum rerum</option>
+              </select>
+              <input class="form__input-email" type="email" name="email" id="email" placeholder="Ваш e-mail">
+              <input class="form__input-name" type="text" name="name" id="name" placeholder="Ваше имя">
+              <div class="form__wrapper">
+                <div class="form__range-info">
+                  <label for="range" class="form__range-label">
+                   Sed ut&nbsp;perspiciatis, unde omnis iste natus
+                  </label>
+                  <span class="form__range-percent" id="range-value">75%</span>
+                </div>
+                <input 
+                  class="form__range"
+                  type="range" 
+                  id="range" 
+                  name="range" 
+                  min="0" 
+                  max="100" 
+                  value="75" 
+                >
+              </div>
+              <div class="custom-file">
+                <input 
+                  class="custom-file__input" 
+                  type="file" 
+                  name="file" 
+                  id="file" 
+                  accept=".pdf, .doc, .docx, .jpg, .jpeg, .png" 
+                >
+
+                <label for="file" class="custom-file__label">
+                  <svg class="custom-file__label-icon" width="17" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-add-file"></use>
+                  </svg>
+                  <span class="custom-file__text">Прикрепить файл</span>
+                </label>
+              </div>
+              <button class="form__button btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__copyright">
+          <span class="footer__copyright-text">© 2018 «LOREMIPSUM.NET» Все права защищены.</span>
+        </div>
+        <div class="footer__payment">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <div class="footer__inner">
+                <svg class="footer__list-icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-qiwi"></use>
+                </svg>
+                <span class="footer__list-payment">QIWI wallet</span>
+              </div>
+            </li>
+            <li class="footer__list-item">
+              <div class="footer__inner">
+                <svg class="footer__list-icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-yandex-money"></use>
+                </svg>
+                <span class="footer__list-payment">Yandex Money</span>
+              </div>
+            </li>
+            <li class="footer__list-item">
+              <div class="footer__inner">
+                <svg class="footer__list-icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-web-money"></use>
+                </svg>
+                <span class="footer__list-payment">Web Money</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <ul class="footer__links">
+            <li class="footer__links-item">
+              <a class="footer__links-link" href="#" >
+                <svg class="footer__list-icon" width="15" height="11" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-message-blue"></use>
+                </svg>
+                info@ipsum228.com
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__links-link" href="#">
+                <svg class="footer__list-icon" width="10" height="13" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
+              </svg>
+              Мы вконтакте
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

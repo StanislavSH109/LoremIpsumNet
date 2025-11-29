@@ -1,0 +1,134 @@
+@use '../global/_variables' as *;
+
+.order {
+  background-image: url('../../images/order/order.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    max-width: 100%;
+    @media (max-width: 767px) {
+      gap: 40px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px;
+    @media (max-width: 767px) {
+      gap: 10px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: $ff-main;
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $color-white;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+    span {
+      color: $color-summer-sky-light;
+
+    }
+  }
+
+  &__text {
+    font-family: $ff-main;
+    font-size: 1.1rem;
+    color: #BBBBBB;
+    line-height: 1.1;
+    @media (max-width: 767px) {
+      font-size: 1rem;
+    }
+  }
+
+
+  &__steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    span {
+      font-family: $ff-main;
+      color: $color-white;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    &-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    max-width: 190px;
+    gap: 20px;
+    
+    &::after {
+      content: "• • • • •";
+      position: absolute;
+      top: 36px; // подстрой под иконку
+      left: 70%;
+      width: 170px;
+      text-align: center;
+      color: #C4C4C4;
+      letter-spacing: 8px;
+      pointer-events: none;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &:last-child::after {
+      content: none;
+      }
+    }
+
+    &-round {
+        width: 33px;
+        height: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px; 
+      }
+
+      &-message {
+        font-family: $ff-main;
+        color: $color-white;
+        font-size: 12px;
+        line-height: 1.2;
+      }
+
+    &-dot {
+      display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    margin: 40px 7px 10px 8px;
+    }
+  }
+
+  &__forms {
+    padding: 8px 0 0 0;
+    width: 100%;
+  }
+}

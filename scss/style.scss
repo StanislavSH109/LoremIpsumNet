@@ -1,0 +1,21 @@
+// GLOBAL
+@use 'global/_normalize.scss' as *;
+@use 'global/variables' as *;
+@use 'global/_mixins' as *;
+@use 'global/_fonts' as *;
+@use 'global/_reboot.scss' as *;
+@use 'global/_container' as *;
+@use 'global/_visually-hidden' as *;
+
+// BLOCKS
+@use 'blocks/_btn' as *;
+@use 'blocks/_header' as *;
+@use 'blocks/_burger' as *;
+@use 'blocks/_side-menu' as *;
+@use 'blocks/_hero' as *;
+@use 'blocks/_order' as *;
+@use 'blocks/_round-icon' as *;
+@use 'blocks/_form' as *;
+@use 'blocks/custom-file' as *;
+@use 'blocks/_select' as *;
+@use 'blocks/_footer' as *;
